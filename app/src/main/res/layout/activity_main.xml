@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_image"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:id="@+id/superheroImage"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:contentDescription="@string/superhero_nightwing"
+                app:layout_constraintTop_toTopOf="@id/cd_image"
+                app:layout_constraintStart_toStartOf="@id/cd_image"
+                app:layout_constraintEnd_toEndOf="@id/cd_image"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/superheroName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:contentDescription="@string/nama_superhero"
+                android:text="@string/nama_superhero"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@+id/cd_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:id="@+id/superheroBiography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/isi_data_bio_superhero"
+            android:text="@string/isi_data_bio_superhero"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/superheroName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/dark_navy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/superheroBiography"
+            app:layout_constraintEnd_toEndOf="parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/powerstat"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+            <TextView
+                android:id="@+id/superheroDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/isi_data_power_superhero"
+                android:text="@string/isi_data_power_superhero"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toBottomOf="@+id/cd_bio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

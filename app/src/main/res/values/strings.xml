@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tugas4-NightWing-10121253</string>
+    <string name="superhero_nightwing">superhero_nightwing</string>
+    <string name="nama_superhero">Nightwing</string>
+    <string name="bio_superhero">Bio</string>
+    <string name="isi_data_bio_superhero">isi biography</string>
+    <string name="isi_data_power_superhero">isi powerstats</string>
+    <string name="powerstat">Powerstats</string>
+</resources>
